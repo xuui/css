@@ -1,0 +1,22 @@
+/*
+Name: Xu.HTML5 Base HTML Style.
+version: 1.2
+Copyright(C)2013  Xu.hel@Xu.Design(zvzhssj@gmail.com).
+The CSS is released under BSD License.
+Licensed under the BSD License:
+http://creativecommons.org/licenses/BSD/
+*/
+
+@import url(reset.css);
+
+body{font:400 14px/20px sans-serif}
+
+/* Global Class */
+.clear{clear:both;}
+.clearer{clear:both;display:block;margin:0;padding:0;height:0;line-height:1px;font-size:1px;}
+
+/* Line break */
+div,p{white-space:normal;word-break:break-all;word-wrap:break-word;}
+table{table-layout:fixed;}
+table th,table td{word-wrap:break-word;overflow:hidden;}
+pre{white-space:pre-wrap;word-wrap:break-word;width:auto;}
