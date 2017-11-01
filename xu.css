@@ -1,0 +1,11 @@
+:root{
+  var-companyblue:#369;
+  var-lighterblue:powderblue;
+}
+
+h1{
+  color:var(companyblue);
+}
+h2{
+  color:var(lighterblue);
+}
