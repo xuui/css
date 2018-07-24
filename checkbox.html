@@ -15,14 +15,18 @@ body{max-width:960px;margin:0 auto;}
 font-size:20px;font-weight:300;color:#000;}
 
 .checkbox,input[type=checkbox]{display:none;}
-.checkbox + label{display:inline-block;background:transparent url(checkbox.png) no-repeat 0 0;padding-left:24px;height:24px;line-height:24px;}
+.checkbox+label{display:inline-block;background:transparent url(checkbox.png) no-repeat 0 0;padding-left:24px;height:24px;line-height:24px;}
 .checkbox:checked +label{background-position:0 -24px;}
 
 .switch+label{display:inline-block;background:transparent url(checkbox.png) no-repeat 0 -48px;padding-left:32px;height:24px;line-height:24px;}
 .switch:checked+label{background-position:0 -72px;}
 
-
-
+.switchb+label{position:relative;padding-left:32px;}
+.switchb+label:before,.switchb+label:after{position:absolute;top:3px;display:block;border-radius:7px;content:'';transition:all .2s ease-out;}
+.switchb+label:before{background:#b0bec5;width:24px;height:12px;}
+.switchb+label:after{background:#ffffff;margin:2px;width:8px;height:8px;left:0px;}
+.switchb:checked+label:before{background:#06c;}
+.switchb:checked+label:after{left:12px;}
 
 </style>
 </head>
@@ -38,6 +42,9 @@ font-size:20px;font-weight:300;color:#000;}
   </p>
   <p>
     <input type="checkbox" name="switch" id="switch-1" class="switch"><label for="switch-1">switch 1</label>  
+  </p>
+  <p>
+    <input type="checkbox" name="switch" id="switchB" class="switchb"><label for="switchB">switch B</label>  
   </p>
 </form>
 
