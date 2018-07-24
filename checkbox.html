@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+<title>Xu.css Template</title>
+<link rel="stylesheet" href="xu.css">
+<link rel="stylesheet" href="http://reach.xuui.net/fonts/fontawesome/font-awesome.min.css">
+<style>
+body{max-width:960px;margin:0 auto;}
+.tit1{font-weight:400;}
+.demobox{border-bottom:1px solid #000;margin:15px auto 30px;padding-bottom:1em;}
+.demo-title{background:#eee;display:block;margin:0 0 20px;padding:10px 20px;
+font-size:20px;font-weight:300;color:#000;}
+
+.checkbox,input[type=checkbox]{display:none;}
+.checkbox + label{display:inline-block;background:transparent url(checkbox.png) no-repeat 0 0;padding-left:24px;height:24px;line-height:24px;}
+.checkbox:checked +label{background-position:0 -24px;}
+
+.switch+label{display:inline-block;background:transparent url(checkbox.png) no-repeat 0 -48px;padding-left:32px;height:24px;line-height:24px;}
+.switch:checked+label{background-position:0 -72px;}
+
+
+
+
+</style>
+</head>
+<body>
+<h1 class="tit1">Xu.DOM CheckBoxs</h1>
+
+<form>
+  <p>
+    <input type="checkbox" name="check" id="checkbox-1" class="checkbox" ><label for="checkbox-1">checkbox 1</label>
+  </p>
+  <p>
+    <input type="checkbox" name="check" id="checkbox-2" class="checkbox"><label for="checkbox-2">checkbox 2</label>  
+  </p>
+  <p>
+    <input type="checkbox" name="switch" id="switch-1" class="switch"><label for="switch-1">switch 1</label>  
+  </p>
+</form>
+
+</body>
+</html>
