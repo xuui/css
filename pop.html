@@ -17,38 +17,38 @@
 <!-- CSS -->
 <link rel="stylesheet" href="xu.css">
 <style>
-body{text-align:center;}
+body{position:relative;text-align:center;}
 #pop{
-  position: relative;
+position:relative;
 margin:32px auto;width:48px;height:48px;line-height:48px;
-  background:#f2f2f2;border-radius:27px;
+background:#eee;border-radius:27px;
 
 transition:all .32s ease-in-out;
 }
 #pop:hover{
-  border-radius:0;
-  width:320px;
-  /*animation: popa 1s ease-in-out;*/
-  
+border-radius:2px;
+width:320px;height:128px;
+/*animation: popa 1s ease-in-out;*/
+
 }
 #pop img{
-  position:absolute;bottom:0;left:auto;right:auto;
-  border:2px solid rgba(0,0,0,0);border-radius:16px;margin:8px;margin-left:-16px;width:32px;height:32px;
+position:absolute;bottom:0;left:auto;right:auto;
+border:2px solid rgba(0,0,0,0);border-radius:16px;margin:8px;width:32px;height:32px;
+transform:translate(-24px,0);
 }
-
 
 @keyframes popa{
-0% {
-  border-radius:50%;
+0%{
+border-radius:50%;
 }
 50%{
-  width:320px;
-  border-radius:0;
+width:320px;
+border-radius:0;
 }
-100% {
-  border-radius:0;
-  width:320px;
-  height:128px;
+100%{
+border-radius:0;
+width:320px;
+height:128px;
 }
 }
 </style>
@@ -56,9 +56,9 @@ transition:all .32s ease-in-out;
 </head>
 <body>
 
-    <div id="pop">
-        <img src="xulogo.svg" alt="">
-    </div>
+<div id="pop">
+<img src="xulogo.svg" alt="">
+</div>
 
 </body>
 </html>
