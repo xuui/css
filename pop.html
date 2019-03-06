@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Xu Pop"/>
+
+<meta name="theme-color" content="#2376b7">
+<title>Xu Template.Demo</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="xu.css">
+<style>
+body{text-align:center;}
+#pop{
+  position: relative;
+margin:32px auto;width:48px;height:48px;line-height:48px;
+  background:#f2f2f2;border-radius:27px;
+
+transition:all .32s ease-in-out;
+}
+#pop:hover{
+  border-radius:0;
+  width:320px;
+  /*animation: popa 1s ease-in-out;*/
+  
+}
+#pop img{
+  position:absolute;bottom:0;left:auto;right:auto;
+  border:2px solid rgba(0,0,0,0);border-radius:16px;margin:8px;margin-left:-16px;width:32px;height:32px;
+}
+
+
+@keyframes popa{
+0% {
+  border-radius:50%;
+}
+50%{
+  width:320px;
+  border-radius:0;
+}
+100% {
+  border-radius:0;
+  width:320px;
+  height:128px;
+}
+}
+</style>
+
+</head>
+<body>
+
+    <div id="pop">
+        <img src="xulogo.svg" alt="">
+    </div>
+
+</body>
+</html>
