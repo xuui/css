@@ -18,24 +18,30 @@
 <link rel="stylesheet" href="xu.css">
 <style>
 body{position:relative;text-align:center;}
-#pop{
+#pop{overflow:hidden;
 position:relative;
 margin:32px auto;width:48px;height:48px;line-height:48px;
-background:#eee;border-radius:24px;
+background:#127212;border-radius:24px;
 box-shadow:0 0 0 0 rgba(0,0,0,0);
 /*transition:all .5s ease-in-out;*/
 }
 #pop:hover{
-background-color:#fff;
+background-color:#127212;
 border-radius:2px;
 width:320px;height:128px;
 animation: popAnimation .6s ease-in-out;
 box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12);
 }
-#pop img{
-position:absolute;bottom:0;left:auto;right:auto;
-border:1px solid rgba(0,0,0,0);margin:4px;width:40px;height:40px;
-transform:translate(-24px,0);
+#pop .conts{display:none;}
+#pop:hover .conts{display:block;background:#fff;height:100%;}
+#pop .bottom{
+  position:absolute;left:0;bottom:0;right:0;
+  background:#127212;
+  height:48px;
+  text-align:center;
+}
+#pop .bottom img{
+border:0;margin:4px;width:40px;height:40px;
 }
 
 @keyframes popAnimation{
@@ -45,13 +51,13 @@ width:48px;
 height:48px;
 }
 50%{
-background-color:#fff;
+background-color:#127212;
 border-radius:4px;
 width:320px;
 height:48px;
 }
 100%{
-background-color:#fff;
+background-color:#127212;
 border-radius:2px;
 width:320px;
 height:128px;
@@ -63,7 +69,12 @@ height:128px;
 <body>
 
 <div id="pop">
-<img src="xulogo.svg" alt="">
+  <div class="conts">
+    conts
+  </div>
+  <div class="bottom">
+    <img src="xulogo.svg" alt="">
+  </div>
 </div>
 
 </body>
