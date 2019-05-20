@@ -31,10 +31,39 @@
 <link rel="apple-touch-icon-precomposed" href="app-icon72x72@2x.png">
 
 <!-- CSS -->
-<link rel="stylesheet" href="xu.css">
+<link rel="stylesheet" href="_xu.css">
+
+<style>
+*{box-sizing:border-box;}
+
+.input input+label:after{
+content:'';transition:all 1s ease;
+}
+.input input{
+  border:1px solid #808080;
+  border-radius:2px;
+  font-size:14px;
+  line-height:20px;
+  padding:5px 8px;
+}
+.input input:focus{
+  border-color:#000;
+}
+.input input:focus+label:after{
+display:block;
+position:fixed;z-index:-1;
+top:0;left:0;right:0;bottom:0;
+background:rgba(0,0,0,.54);
+}
+</style>
 
 </head>
 <body>
+
+  <div class="input">
+    <input type="text">
+    <label></label>
+  </div>
 
   <h1>Hello, world!</h1>
   <p>This is a sticky post!!! Make sure it sticks!</p>
