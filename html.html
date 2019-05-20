@@ -22,7 +22,7 @@
 <meta name="msapplication-TileImage" content="app-icon72x72@2x.png">
 <meta name="msapplication-TileColor" content="#334433">
 
-<meta name="theme-color" content="#1a1a1a">
+<meta name="theme-color" content="#2376b7">
 <title>Xu Template.Demo</title>
 
 <!-- Favicon -->
@@ -36,7 +36,7 @@
 <style>
 *{box-sizing:border-box;}
 
-.input{padding:24px 48px;background:#1a1a1a;}
+.input{padding:24px 48px;background:#2376b7;}
 
 .input input+label:after{
 content:'';transition:all 1s ease;
@@ -53,10 +53,11 @@ content:'';transition:all 1s ease;
 }
 .input input:focus{
   border-color:#000;
+  position:relative;z-index:1001;
 }
 .input input:focus+label:after{
 display:block;
-position:fixed;z-index:-1;
+position:fixed;z-index:1000;
 top:0;left:0;right:0;bottom:0;
 background:rgba(0,0,0,.54);
 }
