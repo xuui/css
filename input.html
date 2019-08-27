@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head profile="http://gmpg.org/xfn/11">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+<meta name="theme-color" content="#2376b7">
+<title>Xu.css Input Template</title>
+<link rel="stylesheet" href="xu.css">
+<link rel="stylesheet" href="http://reach.xuui.net/fonts/fontawesome/font-awesome.min.css">
+<style>
+body{max-width:960px;margin:0 auto;}
+
+.x-input{position:relative;
+  height:40px;margin-bottom:12px;
+}
+
+.x-input input,.x-input label{height:40px;line-height:40px;font-size:16px;transition:all .2s;}
+.x-input label{display:block;}
+.x-input input{position:absolute;
+  background:rgba(0,0,0,.01);
+  border:0;border-bottom:1px solid #ccc;
+}
+.x-input input:focus{border-bottom:1px solid #444;padding-top:14px;line-height:26px;}
+.x-input input:focus+label{color:#06c;line-height:12px;font-size:12px;}
+
+.x-input input[value='']{border-bottom:1px solid #444;padding-top:14px;line-height:26px;}
+
+</style>
+</head>
+<body>
+<h1 class="tit1">Xu.DOM Input</h1>
+
+<form class="xuform">
+  <p class="x-input">
+    <input type="text" name="name" id="" placeholder="">
+    <label for="name">Name</label>
+  </p>
+  <p class="x-input">
+    <input type="email" name="email" id="" placeholder="">
+    <label for="email">E-mail</label>
+  </p>
+</form>
+
+</body>
+</html>
