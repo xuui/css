@@ -15,7 +15,7 @@ body{max-width:960px;margin:0 auto;}
   height:40px;margin-bottom:12px;
 }
 
-.x-input input,.x-input label{height:40px;line-height:40px;font-size:16px;transition:all .2s;}
+.x-input input,.x-input label{display:block;height:40px;line-height:40px;font-size:16px;transition:all .2s;}
 .x-input label{display:block;}
 .x-input input{position:absolute;
   background:rgba(0,0,0,.01);
@@ -24,7 +24,8 @@ body{max-width:960px;margin:0 auto;}
 .x-input input:focus{border-bottom:1px solid #444;padding-top:14px;line-height:26px;}
 .x-input input:focus+label{color:#06c;line-height:12px;font-size:12px;}
 
-.x-input input[value='']{border-bottom:1px solid #444;padding-top:14px;line-height:26px;}
+.x-input input.valed{border-bottom:1px solid #444;padding-top:14px;line-height:26px;}
+.x-input input.valed+label{color:#06c;line-height:12px;font-size:12px;}
 
 </style>
 </head>
@@ -33,7 +34,7 @@ body{max-width:960px;margin:0 auto;}
 
 <form class="xuform">
   <p class="x-input">
-    <input type="text" name="name" id="" placeholder="">
+    <input type="text" name="name" id="" class="" placeholder="">
     <label for="name">Name</label>
   </p>
   <p class="x-input">
@@ -42,5 +43,21 @@ body{max-width:960px;margin:0 auto;}
   </p>
 </form>
 
+<script src="https://cdn.xuui.net/js/jquery/jquery.min.js"></script>
+<script>
+//console.log( $('.x-input input').val() );
+$('.x-input input').focusout(function(){
+  
+
+  if( $(this).val()!='' ){
+    $(this).addClass='valed';
+    console.log('val: 1');
+  }else{
+    //$(this).addClass='valed';
+    console.log('val: 0');
+  }
+
+});
+</script>
 </body>
 </html>
