@@ -42,22 +42,32 @@ body{max-width:960px;margin:0 auto;}
     <label for="email">E-mail</label>
   </p>
 </form>
-
+<!--
 <script src="https://cdn.xuui.net/js/jquery/jquery.min.js"></script>
+<script src="https://cdn.xuui.net/js/jquery/jquery.slim.min.js"></script>
+<script src="https://cdn.xuui.net/js/jquery/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.xuui.net/js/jquery/jquery-1.12.4.min.js"></script>
+-->
+<script src="https://cdn.xuui.net/js/zepto/zepto.min.js"></script>
 <script>
-//console.log( $('.x-input input').val() );
+
 $('.x-input input').focusout(function(){
   
+  console.log( $(this).attr('name') );
 
-  if( $(this).val()!='' ){
-    $(this).addClass='valed';
-    console.log('val: 1');
+  if( $(this).val() != "" ){
+    console.log( $(this).attr('name') + ' val: Ye!' );
+
+    //$(this).siblings().addClass='valed';
+    $(this).className='valed';
   }else{
+    console.log( $(this).attr('name') + ' val: Null!' );
+    
     //$(this).addClass='valed';
-    console.log('val: 0');
   }
 
 });
+
 </script>
 </body>
 </html>
