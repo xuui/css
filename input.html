@@ -25,7 +25,7 @@ body{max-width:960px;margin:0 auto;}
 .x-input input:focus{border-bottom:1px solid #444;padding-top:14px;line-height:26px;}
 .x-input input:focus+label{color:#06c;line-height:12px;font-size:12px;}
 
-.x-input input.valed{border-bottom:1px solid #444;padding-top:14px;line-height:26px;}
+.x-input input.valed{padding-top:14px;line-height:26px;}
 .x-input input.valed+label{color:#06c;line-height:12px;font-size:12px;}
 
 </style>
@@ -35,8 +35,12 @@ body{max-width:960px;margin:0 auto;}
 
 <form class="xuform">
   <p class="x-input">
-    <input type="text" name="name" id="" class="" placeholder="">
+    <input type="text" name="name" id="" placeholder="">
     <label for="name">Name</label>
+  </p>
+  <p class="x-input">
+    <input type="text" name="name2" id="" class="valed" placeholder="">
+    <label for="name">Name2</label>
   </p>
   <p class="x-input">
     <input type="email" name="email" id="" placeholder="">
@@ -60,7 +64,7 @@ $('.x-input input').focusout(function(){
     console.log( $(this).attr('name') + ' val: Ye!' );
 
     //$(this).siblings().addClass='valed';
-    $(this).className='valed';
+    $(this).addClass='valed';
   }else{
     console.log( $(this).attr('name') + ' val: Null!' );
     
