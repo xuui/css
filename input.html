@@ -7,7 +7,6 @@
 <meta name="theme-color" content="#2376b7">
 <title>Xu.css Input Template</title>
 <link rel="stylesheet" href="xu.css">
-<link rel="stylesheet" href="http://reach.xuui.net/fonts/fontawesome/font-awesome.min.css">
 <style>
 body{max-width:960px;margin:0 auto;padding:16px;}
 
@@ -57,37 +56,13 @@ body{max-width:960px;margin:0 auto;padding:16px;}
 <script src="https://cdn.xuui.net/js/zepto/zepto.min.js"></script>
 -->
 <script>
-
-/*
-$('.x-input input').focusout(function(){
-  
-  console.log( $(this).attr('name') );
-
-  if( $(this).val() != "" ){
-    console.log( $(this).attr('name') + ' val: Ye!' );
-
-    //$(this).siblings().addClass='valed';
-    //$(this).addClass='valed';
-    //$(this).classList.add('valed');
-
-  }else{
-    console.log( $(this).attr('name') + ' val: Null!' );
-    
-    //$(this).addClass='valed';
-  }
-
-});
-*/
-
-
 $(".x-input input").keyup(function(){ 
   if( $(this).val() != "" ){
     $(this).addClass("valed");
-  }else{$(this).removeClass("valed");
+  }else{
+    $(this).removeClass("valed");
   }
 });
-
-
 </script>
 </body>
 </html>
