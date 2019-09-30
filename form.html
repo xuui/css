@@ -35,6 +35,9 @@
 <style>
 form{padding:20px;}
 label{display:inline-block;width:120px;}
+
+[disabled]{background:#f2f2f2;border:1px solid #f2f2f2;color:#a1a1a1;}
+
 </style>
 </head>
 <body>
@@ -65,9 +68,9 @@ label{display:inline-block;width:120px;}
 
     <fieldset>
       <legend>Disabled</legend>
-      <p><label for="">text</label><input type="text" placeholder="text"></p>
-      <p><label for="">button</label><input type="button" value="button"></p>
-      <p><label for="">button</label><button >button</button></p>
+      <p><label for="">text</label><input type="text" disabled placeholder="text"></p>
+      <p><label for="">button</label><input type="button" disabled value="button"></p>
+      <p><label for="">button</label><button disabled>button</button></p>
     </fieldset>
 
     <fieldset>
