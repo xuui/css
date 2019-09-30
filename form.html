@@ -31,12 +31,21 @@
 <link rel="apple-touch-icon-precomposed" href="app-icon72x72@2x.png">
 
 <!-- CSS -->
-<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="base.css">
 <style>
+
 form{padding:20px;}
 label{display:inline-block;width:120px;}
 
-[disabled]{background:#f2f2f2;border:1px solid #f2f2f2;color:#a1a1a1;}
+input{border:1px solid #999;color:#333;border-radius:2px;padding:7px;}
+input::placeholder{color:#999;}
+
+input[type=button],input[type=submit],input[type=reset],
+button{border:1px solid #808080;color:#333;border-radius:2px;padding:7px;}
+
+
+[disabled],input[disabled]{background:#f2f2f2;border:1px solid #f2f2f2;color:#a1a1a1;}
+[disabled]::placeholder{color:#666;}
 
 </style>
 </head>
