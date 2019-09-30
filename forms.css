@@ -21,6 +21,7 @@ LICENSE.md
 .xu-form label{margin:.5em 0 .2em}
 .xu-form fieldset{margin:0;padding:.35em 0 .75em;border:0}
 .xu-form legend{display:block;width:100%;padding:.3em 0;margin-bottom:.3em;color:#333;border-bottom:1px solid #e5e5e5}
+
 .xu-form-stacked input[type=color],.xu-form-stacked input[type=date],.xu-form-stacked input[type=datetime-local],.xu-form-stacked input[type=datetime],.xu-form-stacked input[type=email],.xu-form-stacked input[type=file],.xu-form-stacked input[type=month],.xu-form-stacked input[type=number],.xu-form-stacked input[type=password],.xu-form-stacked input[type=search],.xu-form-stacked input[type=tel],.xu-form-stacked input[type=text],.xu-form-stacked input[type=time],.xu-form-stacked input[type=url],.xu-form-stacked input[type=week],.xu-form-stacked label,.xu-form-stacked select,.xu-form-stacked textarea{display:block;margin:.25em 0}
 .xu-form-stacked input:not([type]){display:block;margin:.25em 0}
 .xu-form-aligned input,.xu-form-aligned textarea,.xu-form-aligned select,.xu-form-aligned .xu-help-inline,.xu-form-message-inline{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}
