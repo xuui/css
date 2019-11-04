@@ -55,6 +55,25 @@ input[type=file]{height:32px;padding:2px;line-height:21px;}
 fieldset{border-color:#999;margin:0 0 8px;padding:8px 12px;}
 fieldset legend{padding:0 4px;}
 
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+input[type=url]:hover,
+input[type=search]:hover,
+input[type=number]:hover,
+input[type=tel]:hover,
+input[type=date]:hover,
+input[type=datetime]:hover,
+input[type=datetime-local]:hover,
+input[type=month]:hover,
+input[type=week]:hover,
+input[type=time]:hover{border-bottom:2px solid #000;margin-bottom:-1px;}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+button:hover{background-color:#ededed;}
+
 </style>
 </head>
 <body>
@@ -83,7 +102,7 @@ fieldset legend{padding:0 4px;}
     <p><label for="">submit</label><input type="submit" value="submit"></p>
     <p><label for="">reset</label><input type="reset" value="reset"></p>
     <p><label for="">button</label><input type="button" value="button"></p>
-    <p><label for="">button</label><button >button</button></p>
+    <p><label for="">button</label><button>button</button></p>
 
     <fieldset>
       <legend>Disabled</legend>
