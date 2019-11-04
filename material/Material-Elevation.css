@@ -1,4 +1,6 @@
-.z-depth{box-sizing:border-box;border:none;border-radius:2px;/*}*/background:#fff;}
+.z-depth{box-sizing:border-box;border:none;border-radius:2px;/*}*/background:#fff;
+transition:all .450s cubic-bezier(.23,1,.32,1) 0s;
+}
 
 /* Material Elevation */
 .mdc-elevation-z0{box-shadow:0 0 0 0 rgba(0,0,0,.2),0 0 0 0 rgba(0,0,0,.14),0 0 0 0 rgba(0,0,0,.12)}
@@ -27,4 +29,5 @@
 .mdc-elevation-z23{box-shadow:0 11px 14px -7px rgba(0,0,0,.2),0 23px 36px 3px rgba(0,0,0,.14),0 9px 44px 8px rgba(0,0,0,.12);}
 .mdc-elevation-z24{box-shadow:0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);}
 
+.z-depth:hover{box-shadow:none;}
 /* Material Elevation End */
