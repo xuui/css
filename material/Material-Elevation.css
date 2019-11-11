@@ -1,13 +1,10 @@
 #mdc-elevation div{
   display:inline-block;
-  
+  box-sizing:border-box;border:none;border-radius:2px;
   background:#fff;
-  box-sizing:border-box;border:none;border-radius:2px;/*}*/
   width:160px;height:90px;
-  margin:24px 50px 60px;
-  padding:16px;
+  margin:24px 50px 60px;padding:16px;
   font-size:20px;
-
   transition:all .450s cubic-bezier(.23,1,.32,1) 0s;
 }
 
@@ -37,6 +34,4 @@
 .mdc-elevation-z22:hover{box-shadow:0 10px 14px -6px rgba(0,0,0,.2),0 22px 35px 3px rgba(0,0,0,.14),0 8px 42px 7px rgba(0,0,0,.12);}
 .mdc-elevation-z23:hover{box-shadow:0 11px 14px -7px rgba(0,0,0,.2),0 23px 36px 3px rgba(0,0,0,.14),0 9px 44px 8px rgba(0,0,0,.12);}
 .mdc-elevation-z24:hover{box-shadow:0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);}
-
-.z-depth:hover{box-shadow:none;}
 /* Material Elevation End */
